@@ -4,11 +4,11 @@ balance = 1000000
 
 while True:
    UInput = input("Enter Action: ").lower().replace(" ","")
-   if(UInput == "checkbalence"):
-       print(f"Your balence is :{balance}")
-   elif(UInput == "widthdraw"):
+   if(UInput == "checkbalance"):
+       print(f"Your balance is :{balance}")
+   elif(UInput == "withdraw"):
        try:
-           howmuch = int(input("how much to widthdraw? "))
+           howmuch = int(input("how much to withdraw? "))
        except TypeError:
            print("must be an integer!")
        else:
@@ -31,4 +31,4 @@ while True:
    elif(UInput == "exit"):
        quit()
    else:
-       print(f"unrecognized input: {UInput}. Try checkbalence, deposit, or widthdraw")
+       print(f"unrecognized input: {UInput}. Try checkbalance, deposit, or withdraw")
